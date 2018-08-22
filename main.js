@@ -3,9 +3,9 @@ const client = new Discord.Client();
 let p = "!"
 //статус бота
 client.on('ready', () => {
-    client.user.setPresence({ game: { name: `за MoonChat 🌒 | !help`, type: 3 } }).catch();
+    client.user.setPresence({ game: { name: `за MoonChat 🌙 | !help`, type: 3 } }).catch();
 });
-const server_name = 'MonChat 🌒 '
+const server_name = 'MonChat 🌙 '
 //ТОКЕН
 client.login(process.env.bot_token)
 
