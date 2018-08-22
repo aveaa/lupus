@@ -31,7 +31,7 @@ client.on('message', message => {
             muted.addRole(mutedRole)
             args.shift();
             args.shift();
-            let say = message.content.slice((p + `chmute ${muted}`).length);
+            let say = message.content.slice((p + `chmute ${muted} `).length);
             const embed = new Discord.RichEmbed()
             .setTitle("Информация о муте")
             .setColor("#000594")
