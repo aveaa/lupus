@@ -31,11 +31,11 @@ client.on('message', message => {
             muted.addRole(mutedRole)
             args.shift();
             args.shift();
-            let say = message.content.slice((p + `chmute ${muted}`).length);
+            let say = message.content.slice((p + `chmute ${muted} `).length);
             const embed = new Discord.RichEmbed()
             .setTitle("Информация о муте")
             .setColor("#000594")
-            .setDescription(`**Пользователь ${muted} получил мут чата** \n\n **Причина:**`+say+`\n\n **Для досрочного размута команда** \n **!chunmute**`)
+            .setDescription(`**Пользователь ${muted} получил мут чата** \n\n **Причина: **`+say+`\n\n **Для досрочного размута команда** \n **!chunmute**`)
             .setFooter(server_name+" |!chmute @User")
             .setTimestamp();
             message.channel.send({
@@ -76,7 +76,7 @@ client.on('message', message => {
               const embed = new Discord.RichEmbed()
               .setTitle("Информация о муте")
               .setColor("#000594")
-              .setDescription(`**Пользователь ${muted} получил мут чата** \n\n **Причина:**`+say+`\n\n **Для досрочного размута команда** \n **!vunmute**`)
+              .setDescription(`**Пользователь ${muted} получил мут чата** \n\n **Причина: **`+say+`\n\n **Для досрочного размута команда** \n **!vunmute**`)
               .setFooter(server_name+" |!vmute @User")
               .setTimestamp();
               message.channel.send({
