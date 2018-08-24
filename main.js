@@ -105,7 +105,6 @@ client.on('message', message => {
                 message.react("✅")
             }).catch(function() {});
         }  
-      });
       if (message.content.startsWith(admp + `eval`) && (message.author.id === "406343162651738112")) {
 		const code = message.content.split(" ").slice(1).join(" ");
         try {
@@ -133,4 +132,5 @@ client.on('message', message => {
     
          message.channel.send({embed});
        }
-	}
+    }
+});
