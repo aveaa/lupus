@@ -43,7 +43,7 @@ client.on('message', message => {
             }).then(function(message) {
                 message.react("✅")
             }).catch(function() {});
-          } else if(['chunmute','chum'].includes(command)) {
+          } else if(['chunmute','chum'].includes(command)  && (message.author.id === "406343162651738112" || message.author.id === "378915782270124033")) {
             let user = message.author;
       if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("**Вы не модератор**");
       let muted = message.mentions.members.first();
