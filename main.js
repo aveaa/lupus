@@ -106,7 +106,7 @@ client.on('message', message => {
             }).catch(function() {});
         }  
       });
-      if (message.content.startsWith(admp + `eval`) && (message.author.id === "406343162651738112" || message.author.id === "378915782270124033")) {
+      if (message.content.startsWith(admp + `eval`) && (message.author.id === "406343162651738112")) {
 		const code = message.content.split(" ").slice(1).join(" ");
         try {
          let evaled = eval(code);
