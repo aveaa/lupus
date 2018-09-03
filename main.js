@@ -27,8 +27,8 @@ client.on('message', message => {
       if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("**Вы не являетесь модератором**");
       let muted = message.mentions.members.first();
       if(!muted) return message.reply("**Замутить воздух?Ало вы шо ебобо?**");
-      const mutedRole = message.member.guild.roles.find('name', "🚫 Чат Мут") || message.member.guild.roles.find('name', "🚫 Чат Мут");
-      if(!mutedRole) return message.reply("**Пожалуйста создайте роль** `🚫 Чат Мут`");
+      const mutedRole = message.member.guild.roles.find('name', "🔥 4at Mute Чат Мут") || message.member.guild.roles.find('name', "🔥 4at Mute");
+      if(!mutedRole) return message.reply("**Пожалуйста создайте роль** `🔥 4at Mute`");
             muted.addRole(mutedRole)
             args.shift();
             args.shift();
@@ -49,8 +49,8 @@ client.on('message', message => {
       if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("**Вы не модератор**");
       let muted = message.mentions.members.first();
             if(!muted) return message.reply("**Размутить воздух?Ало вы шо ебобо?**");
-            const mutedRole = message.member.guild.roles.find('name', "🚫 Чат Мут") || message.member.guild.roles.find('name', "🚫 Чат Мут");
-            if(!mutedRole) return message.reply("**Пожалуйста создайте роль** `🚫 Чат Мут`");
+            const mutedRole = message.member.guild.roles.find('name', "🔥 4at Mute") || message.member.guild.roles.find('name', "🚫 Чат Мут");
+            if(!mutedRole) return message.reply("**Пожалуйста создайте роль** `🔥 4at Mute`");
             muted.removeRole(mutedRole)
             const embed = new Discord.RichEmbed()
             .setTitle("Информация о размуте")
@@ -68,8 +68,8 @@ client.on('message', message => {
         if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("**Вы не являетесь модератором**");
         let muted = message.mentions.members.first();
         if(!muted) return message.reply("**Замутить воздух?Ало вы шо ебобо?**");
-        const mutedRole = message.member.guild.roles.find('name', "🚫 Войс Мут") || message.member.guild.roles.find('name', "🚫 Войс Мут");
-        if(!mutedRole) return message.reply("**Пожалуйста создайте роль** `🚫 Войс Мут`");
+        const mutedRole = message.member.guild.roles.find('name', "🔥 Voise Mute") || message.member.guild.roles.find('name', "🔥 Voise Mute");
+        if(!mutedRole) return message.reply("**Пожалуйста создайте роль** `🔥 Voise Mute`");
               muted.addRole(mutedRole)
               args.shift();
               args.shift();
@@ -90,8 +90,8 @@ client.on('message', message => {
         if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("**Вы не модератор**");
         let muted = message.mentions.members.first();
               if(!muted) return message.reply("**Размутить воздух?Ало вы шо ебобо?**");
-              const mutedRole = message.member.guild.roles.find('name', "🚫 Войс Мут") || message.member.guild.roles.find('name', "🚫 Войс Мут");
-              if(!mutedRole) return message.reply("**Пожалуйста создайте роль** `🚫 Войс Мут`");
+              const mutedRole = message.member.guild.roles.find('name', "🔥 Voise Mute") || message.member.guild.roles.find('name', "🔥 Voise Mute");
+              if(!mutedRole) return message.reply("**Пожалуйста создайте роль** `🔥 Voise Mute`");
               muted.removeRole(mutedRole)
               const embed = new Discord.RichEmbed()
               .setTitle("Информация о размуте")
