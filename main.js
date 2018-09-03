@@ -4,9 +4,9 @@ let p = "!"
 let admp = "!!"
 //статус бота
 client.on('ready', () => {
-    client.user.setPresence({ game: { name: `за MoonChat 🌙 | !help`, type: 3 } }).catch();
+    client.user.setPresence({ game: { name: `за MoonChat 🌌 | !help`, type: 3 } }).catch();
 });
-const server_name = 'MonChat 🌙 '
+const server_name = 'MoonChat 🌌 '
 //ТОКЕН
 client.login(process.env.bot_token)
 
